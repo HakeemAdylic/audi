@@ -34,7 +34,8 @@
         }
       ],
       "a": {
-        "b": "z-index: 1; opacity: 1; visibility: visible;"
+        "b": "z-index: 1; opacity: 1; visibility: visible;",
+        "n": "all .5s ease"
       }
     }
   ],
