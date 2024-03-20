@@ -19,12 +19,14 @@
         },
         {
           "t": "e",
+          "c": "headline",
           "h": "<h2 style='font-size:$headlineFontSizepx;color:$headlineColor;'>$headlineCopy</h2>",
           "s": "width:100%;position:absolute;top:$headlineYPospx;left:$headlineXPospx;text-align:$headlineAlignment;"
         },
         {
           "t": "e",
-          "h": "<h4 class='subheadline' style='font-size:$subHeadlineFontSizepx;color:$subHeadlineColor;' class='headline'>$subHeadlineCopy</h4>",
+          "c": "subheadline",
+          "h": "<h4 class='subheadline' style='font-size:$subHeadlineFontSizepx;color:$subHeadlineColor;'>$subHeadlineCopy</h4>",
           "s": "width:100%;position:absolute;top:$subHeadlineYPospx;left:$subHeadlineXPospx;text-align:$subHeadlineAlignment;"
         },
         {
@@ -32,11 +34,7 @@
           "h": "<button class='cta' class='cta'>$ctaCopy</button>",
           "s": "font-size:$ctaFontSizepx;position:absolute;top:$ctaYPospx;left:$ctaXPospx;"
         }
-      ],
-      "a": {
-        "b": "z-index: 1; opacity: 1; visibility: visible;",
-        "n": "all .5s ease"
-      }
+      ]
     }
   ],
   "config": [

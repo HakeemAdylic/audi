@@ -1,0 +1,20 @@
+
+
+
+Transitions
+    - Frames 1 and 2 should fade out
+    - For each frame the headline should come in from the left at the start
+    - For each frame the subheadline should come in from the left after 1 second
+    - Frames 1 and 2 should, both the headline and subheadline should fade out after 5.5 seconds
+
+
+Approach
+    - Load GSAP at the global level
+    - Within each frame create a timeline instance which will
+        - move headline from left to right after 0 seconds
+            .headline
+        - move subheadline from left to right with a position parameter +=1
+            .subheadline
+        - move both headline and subheadline from right to left 5.5
+            [.headline, .subheadline]
+            

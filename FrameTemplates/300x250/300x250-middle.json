@@ -19,21 +19,17 @@
         },
         {
           "t": "e",
+          "c": "headline",
           "h": "<h2 style='font-size:$headlineFontSizepx;color:$headlineColor;'>$headlineCopy</h2>",
           "s": "width:100%;position:absolute;top:$headlineYPospx;left:$headlineXPospx;text-align:$headlineAlignment;"
         },
         {
           "t": "e",
-          "h": "<h4 class='subheadline' style='font-size:$subHeadlineFontSizepx;color:$subHeadlineColor;' class='headline'>$subHeadlineCopy</h4>",
+          "c": "subheadline",
+          "h": "<h4 class='subheadline' style='font-size:$subHeadlineFontSizepx;color:$subHeadlineColor;'>$subHeadlineCopy</h4>",
           "s": "width:100%;position:absolute;top:$subHeadlineYPospx;left:$subHeadlineXPospx;text-align:$subHeadlineAlignment;"
         }
-      ],
-      "a": {
-        "b": "z-index: 2; opacity: 1; visibility: visible;",
-        "a": "opacity: 0; visibility: hidden;",
-        "x": "all .5s ease",
-        "n": "all .5s ease"
-      }
+      ]
     }
   ],
   "config": [
