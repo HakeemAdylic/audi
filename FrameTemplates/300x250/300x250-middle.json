@@ -1,0 +1,204 @@
+{
+  "template": [
+    {
+      "t": "f",
+      "c": "frame middle-frame template-set-frame",
+      "s": "z-index: 2; opacity: 0;",
+      "d": 6000,
+      "e": [
+        {
+          "t": "e",
+          "c": "backgroundImage-container",
+          "h": "<img class='backgroundImage' src='$backgroundImage' alt='Audi Car'/>"
+        },
+        {
+          "t": "e",
+          "c": "logo-container",
+          "h": "<img class='logo' src='https://upload.wikimedia.org/wikipedia/commons/9/92/Audi-Logo_2016.svg' alt='Audi Logo'/>",
+          "s": "position:absolute;left:var(--logo-initial-x);top:var(--logo-initial-y);z-index:100;"
+        },
+        {
+          "t": "e",
+          "h": "<h2 style='font-size:$headlineFontSizepx;color:$headlineColor;'>$headlineCopy</h2>",
+          "s": "width:100%;position:absolute;top:$headlineYPospx;left:$headlineXPospx;text-align:$headlineAlignment;"
+        },
+        {
+          "t": "e",
+          "h": "<h4 class='subheadline' style='font-size:$subHeadlineFontSizepx;color:$subHeadlineColor;' class='headline'>$subHeadlineCopy</h4>",
+          "s": "width:100%;position:absolute;top:$subHeadlineYPospx;left:$subHeadlineXPospx;text-align:$subHeadlineAlignment;"
+        }
+      ],
+      "a": {
+        "b": "z-index: 2; opacity: 1; visibility: visible;",
+        "a": "opacity: 0; visibility: hidden;",
+        "x": "all .5s ease"
+      }
+    }
+  ],
+  "config": [
+    {
+      "target": "$backgroundImage",
+      "name": "Image",
+      "type": "file",
+      "groupName": "Frame Background",
+      "groupType": "image",
+      "initialValue": "https://s0.2mdn.net/creatives/assets/1951882/transparent.png"
+    },
+
+    {
+      "target": "$headlineCopy",
+      "name": "Headline",
+      "type": "text",
+      "groupName": "Headline",
+      "groupType": "text",
+      "initialValue": "The Art of Performance.",
+      "properties": {
+        "value": "Audi Approved Used"
+      }
+    },
+    {
+      "target": "$headlineFontSize",
+      "name": "Font Size",
+      "type": "number",
+      "groupName": "Headline",
+      "groupType": "number",
+      "initialValue": 16,
+      "properties": {
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "value": 16
+      }
+    },
+    {
+      "target": "$headlineColor",
+      "name": "Headline Color",
+      "type": "text",
+      "groupName": "Headline",
+      "groupType": "text",
+      "initialValue": "#000000",
+      "properties": {
+        "value": "000000"
+      }
+    },
+    {
+      "target": "$headlineXPos",
+      "name": "X Position",
+      "type": "number",
+      "groupName": "Headline",
+      "groupType": "number",
+      "initialValue": 15,
+      "properties": {
+        "min": 0,
+        "max": 300,
+        "step": 1,
+        "value": 15
+      }
+    },
+    {
+      "target": "$headlineYPos",
+      "name": "Y Position",
+      "type": "number",
+      "groupName": "Headline",
+      "groupType": "number",
+      "initialValue": 55,
+      "properties": {
+        "min": 0,
+        "max": 250,
+        "step": 1,
+        "value": 55
+      }
+    },
+    {
+      "target": "$headlineAlignment",
+      "name": "Alignment",
+      "type": "radio",
+      "groupName": "Headline",
+      "groupType": "select",
+      "initialValue": "left",
+      "properties": {
+        "value": "left"
+      },
+      "options": ["left", "center", "right"],
+      "labels": ["Left", "Center", "Right"]
+    },
+
+    {
+      "target": "$subHeadlineCopy",
+      "name": "Sub Headline",
+      "type": "text",
+      "groupName": "Sub Headline",
+      "groupType": "text",
+      "initialValue": "Timelessly Audi.",
+      "properties": {
+        "value": "Timelessly Audi."
+      }
+    },
+    {
+      "target": "$subHeadlineFontSize",
+      "name": "Font Size",
+      "type": "number",
+      "groupName": "Sub Headline",
+      "groupType": "number",
+      "initialValue": 14,
+      "properties": {
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "value": 14
+      }
+    },
+    {
+      "target": "$subHeadlineColor",
+      "name": "Sub Headline Color",
+      "type": "text",
+      "groupName": "Sub Headline",
+      "groupType": "text",
+      "initialValue": "#000000",
+      "properties": {
+        "value": "#000000"
+      }
+    },
+    {
+      "target": "$subHeadlineXPos",
+      "name": "X Position",
+      "type": "number",
+      "groupName": "Sub Headline",
+      "groupType": "number",
+      "initialValue": 15,
+      "properties": {
+        "min": 0,
+        "max": 300,
+        "step": 1,
+        "value": 15
+      }
+    },
+    {
+      "target": "$subHeadlineYPos",
+      "name": "Y Position",
+      "type": "number",
+      "groupName": "Sub Headline",
+      "groupType": "number",
+      "initialValue": 75,
+      "properties": {
+        "min": 0,
+        "max": 250,
+        "step": 1,
+        "value": 75
+      }
+    },
+    {
+      "target": "$subHeadlineAlignment",
+      "name": "Alignment",
+      "type": "radio",
+      "groupName": "Sub Headline",
+      "groupType": "select",
+      "initialValue": "left",
+      "properties": {
+        "value": "left"
+      },
+      "options": ["left", "center", "right"],
+      "labels": ["Left", "Center", "Right"]
+    }
+  ]
+}

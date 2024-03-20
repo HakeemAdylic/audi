@@ -1,0 +1,32 @@
+{
+  "template": [
+    {
+      "t": "s",
+      "s": "/*** PLEASE DO NOT AMEND THIS NORMALISE CSS ***/ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:0;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type='button'],[type='reset'],[type='submit']{-webkit-appearance:button}button::-moz-focus-inner,[type='button']::-moz-focus-inner,[type='reset']::-moz-focus-inner,[type='submit']::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type='button']:-moz-focusring,[type='reset']:-moz-focusring,[type='submit']:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type='checkbox'],[type='radio']{box-sizing:border-box;padding:0}[type='number']::-webkit-inner-spin-button,[type='number']::-webkit-outer-spin-button{height:auto}[type='search']{-webkit-appearance:textfield;outline-offset:-2px}[type='search']::-webkit-search-cancel-button,[type='search']::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}.dynamicAdvertContainer{display:none;position:absolute;width:100%;height:100%;border:1px solid black;box-sizing:border-box;background:#EEE;overflow:hidden;line-height:1.15}:focus{outline:0}::-moz-focus-inner{border:0}"
+    },
+    {
+      "t": "s",
+      "s": ".dynamicAdvertContainer{cursor:pointer;font-family:'Currys Headline',sans-serif;width:300px;height:250px;overflow:hidden;border:1px solid #000;position:absolute;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;--logo-initial-x:15px;--logo-initial-y:15px;}.dynamicAdvertContainer *{box-sizing:border-box;margin:0;}.dynamicAdvertContainer img{display:block;}.dynamicAdvertContainer .dev{opacity:1!important;}.dynamicAdvertContainer .frame{height:100%;width:100%;position:absolute;}.dynamicAdvertContainer .backgroundImage-container{width:100%;height:100%;}.dynamicAdvertContainer .globalBackgroundImage,.backgroundImage{width:100%;height:100%;object-fit:cover;}.dynamicAdvertContainer .logo-container{width:95px;height:35px;}.dynamicAdvertContainer .logo{max-width:100%;}.dynamicAdvertContainer .subheadline{font-weight:100;}.dynamicAdvertContainer .cta{cursor:pointer;background-color:white;color:black;padding:5px 15px;border-width:0;border:1px solid black;}.dynamicAdvertContainer .cta:hover{transform:scale(1.2);transition-property:transform;transition-timing-function:ease;transition-duration:300ms;}"
+    },
+    {
+      "t": "e",
+      "s": "position:absolute;inset:0px;z-index:0;",
+      "c": "backgroundImage-container",
+      "h": "<img class='globalBackgroundImage' src='$globalBackgroundImage' alt='Global background image'/>"
+    },
+    {
+      "t": "j",
+      "s": "ZnVuY3Rpb24gaXNEZXZlbG9wbWVudFBsYXRmb3JtKCkgewogIHZhciBvcmNhID0gJ29yY2EuYWR5bGljLmNvbSc7CiAgdmFyIHRlbXBsYXRlID0gJ3RlbXBsYXRlLmFkeWxpY29yY2EuY29tJzsKICBpZiAoZG9jdW1lbnQubG9jYXRpb24uaG9zdCA9PT0gb3JjYSB8fCBkb2N1bWVudC5sb2NhdGlvbi5ob3N0ID09PSB0ZW1wbGF0ZSkgewogICAgcmV0dXJuIHRydWU7CiAgfQogIHJldHVybiBmYWxzZTsKfQoKZnVuY3Rpb24gaGFuZGxlRXhpdCgpIHsKICBpZiAoIWlzRGV2ZWxvcG1lbnRQbGF0Zm9ybSgpKSB7CiAgICBkb2N1bWVudAogICAgICAucXVlcnlTZWxlY3RvcignLmR5bmFtaWNBZHZlcnRDb250YWluZXInKQogICAgICAuYWRkRXZlbnRMaXN0ZW5lcignY2xpY2snLCBleGl0Q2xpY2tIYW5kbGVyKTsKICB9IGVsc2UgewogICAgZG9jdW1lbnQucXVlcnlTZWxlY3RvcignLmR5bmFtaWNBZHZlcnRDb250YWluZXInKS5vbmNsaWNrID0gZnVuY3Rpb24gKCkgewogICAgICBjb25zb2xlLmxvZygnQ2xpY2tvdXQgVHJpZ2dlcmVkLi4uLi4nKTsKICAgIH07CiAgfQp9CgpoYW5kbGVFeGl0KCk7"
+    }
+  ],
+  "config": [
+    {
+      "target": "$globalBackgroundImage",
+      "name": "Image",
+      "type": "file",
+      "groupName": "Global Background",
+      "groupType": "image",
+      "initialValue": "https://adylic-uk-orca.s3.eu-west-1.amazonaws.com/imageasset/5b9ef809b3514c238f70399a5bc6c32e.png"
+    }
+  ]
+}
