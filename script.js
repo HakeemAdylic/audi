@@ -101,7 +101,7 @@
 
       if (!isLastFrame) {
         tl.to([headlineSelector, subheadlineSelector],{ x: '100%', duration: DURATION }, '+=3') // end time: 5.5
-            .to(frame, { opacity: 0, duration: DURATION }) // end time: 6
+            .to(frame, { opacity: 0, visibility: 'hidden', duration: DURATION }) // end time: 6
             // frame out current frame and fade in next frame at the same time
             .to(nextFrame, { opacity: 1, duration: DURATION }, '<'); // end time: 6
       }
