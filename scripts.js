@@ -1,8 +1,239 @@
 // Start
-KGZ1bmN0aW9uICgpIHsKICBmdW5jdGlvbiBpc0RldkVudigpIHsKICAgIHJldHVybiAoCiAgICAgIHdpbmRvdy5sb2NhdGlvbi5ocmVmLmluZGV4T2YoJ29yY2EuYWR5bGljLmNvbScpID4gMCB8fAogICAgICB3aW5kb3cubG9jYXRpb24uaHJlZi5pbmRleE9mKCd0ZW1wbGF0ZS5hZHlsaWNvcmNhLmNvbScpID4gMCB8fAogICAgICB3aW5kb3cubG9jYXRpb24uaHJlZi5pbmRleE9mKCdzYXR1cm4uYWR5bGljLmNvbScpID4gMCB8fAogICAgICB3aW5kb3cubG9jYXRpb24uaG9zdG5hbWUgPT09ICcxMjcuMC4wLjEnIHx8CiAgICAgIHdpbmRvdy5sb2NhdGlvbi5ob3N0bmFtZSA9PT0gJ2xvY2FsaG9zdCcKICAgICk7CiAgfQoKICBmdW5jdGlvbiBkZXZMb2cobWVzc2FnZSkgewogICAgaWYgKGlzRGV2RW52KCkpIGNvbnNvbGUubG9nKG1lc3NhZ2UpOwogIH0KCiAgZnVuY3Rpb24gY2hlY2tGb3JHc2FwKGNhbGxiYWNrKSB7CiAgICBsZXQgREVBRExJTkVfTVMgPSAxMDAwMDsKICAgIGxldCBSRVRSWV9NUyA9IDEwMDsKICAgIGxldCBpbnRlcnZhbDsKCiAgICBsZXQgdGltZW91dCA9IHNldFRpbWVvdXQoKCkgPT4gewogICAgICBjbGVhckludGVydmFsKGludGVydmFsKTsKICAgICAgZGV2TG9nKCdHU0FQIGZhaWxlZCB0byBsb2FkIGFmdGVyICcgKyBERUFETElORV9NUyAvIDEwMDAgKyAnIHNlY29uZChzKS4nKTsKICAgIH0sIERFQURMSU5FX01TKTsKCiAgICB0cnkgewogICAgICBpZiAoZ3NhcCkgewogICAgICAgIGNsZWFyVGltZW91dCh0aW1lb3V0KTsKICAgICAgICBjYWxsYmFjaygpOwogICAgICB9CiAgICB9IGNhdGNoIHsKICAgICAgZGV2TG9nKCdJbml0aWFsIEdTQVAgbG9hZCBmYWlsZWQuIFRyeWluZyBhZ2Fpbi4nKTsKICAgICAgaW50ZXJ2YWwgPSBzZXRJbnRlcnZhbCgoKSA9PiB7CiAgICAgICAgdHJ5IHsKICAgICAgICAgIGlmIChnc2FwKSB7CiAgICAgICAgICAgIGNsZWFyVGltZW91dCh0aW1lb3V0KTsKICAgICAgICAgICAgY2xlYXJJbnRlcnZhbChpbnRlcnZhbCk7CiAgICAgICAgICAgIGNhbGxiYWNrKCk7CiAgICAgICAgICB9CiAgICAgICAgfSBjYXRjaCB7fQogICAgICB9LCBSRVRSWV9NUyk7CiAgICB9CiAgfQoKICBmdW5jdGlvbiBpbml0R2xvYmFsQW5pbWF0aW9ucygpIHsKICAgIGNvbnN0IERVUkFUSU9OID0gMC41OwogICAgY29uc3QgdGwgPSBnc2FwLnRpbWVsaW5lKCk7CgogICAgY29uc3QgY3VycmVudEZyYW1lID0gJy5zdGFydC1mcmFtZSc7CiAgICBjb25zdCBuZXh0RnJhbWUgPSAnLm1pZGRsZS1mcmFtZSc7CgogICAgLy8gIERlZmluZSBlbGVtZW50IHNlbGVjdG9ycwogICAgY29uc3QgaGVhZGxpbmVTZWxlY3RvciA9IGAke2N1cnJlbnRGcmFtZX0gLmhlYWRsaW5lYDsKICAgIGNvbnN0IHN1YmhlYWRsaW5lU2VsZWN0b3IgPSBgJHtjdXJyZW50RnJhbWV9IC5zdWJoZWFkbGluZWA7CgogICAgdGwuZnJvbVRvKGhlYWRsaW5lU2VsZWN0b3IsIHsgeDogJy0xMDAlJyB9LCB7IHg6IDAsIGR1cmF0aW9uOiBEVVJBVElPTiB9KSAvLyBlbmQgdGltZTogMC41CiAgICAgIC5mcm9tVG8oCiAgICAgICAgc3ViaGVhZGxpbmVTZWxlY3RvciwKICAgICAgICB7IHg6ICctMTAwJScgfSwKICAgICAgICB7IHg6IDAsIGR1cmF0aW9uOiBEVVJBVElPTiB9LAogICAgICAgICcrPTEnCiAgICAgICkgLy8gZW5kIHRpbWU6IDIKICAgICAgLnRvKAogICAgICAgIFtoZWFkbGluZVNlbGVjdG9yLCBzdWJoZWFkbGluZVNlbGVjdG9yXSwKICAgICAgICB7IHg6ICcxMDAlJywgZHVyYXRpb246IERVUkFUSU9OIH0sCiAgICAgICAgJys9My41JwogICAgICApIC8vIGVuZCB0aW1lOiA1LjUKICAgICAgLnRvKGN1cnJlbnRGcmFtZSwgewogICAgICAgIG9wYWNpdHk6IDAsCiAgICAgICAgdmlzaWJpbGl0eTogJ2hpZGRlbicsCiAgICAgICAgZHVyYXRpb246IERVUkFUSU9OLAogICAgICB9KSAvLyBlbmQgdGltZTogNgogIH0KCiAgY2hlY2tGb3JHc2FwKGluaXRHbG9iYWxBbmltYXRpb25zKTsKfSkoKTs=
+(function () {
+  function isDevEnv() {
+    return (
+      window.location.href.indexOf('orca.adylic.com') > 0 ||
+      window.location.href.indexOf('template.adylicorca.com') > 0 ||
+      window.location.href.indexOf('saturn.adylic.com') > 0 ||
+      window.location.hostname === '127.0.0.1' ||
+      window.location.hostname === 'localhost'
+    );
+  }
+
+  function devLog(message) {
+    if (isDevEnv()) console.log(message);
+  }
+
+  function checkForGsap(callback) {
+    let DEADLINE_MS = 10000;
+    let RETRY_MS = 100;
+    let interval;
+
+    let timeout = setTimeout(() => {
+      clearInterval(interval);
+      devLog('GSAP failed to load after ' + DEADLINE_MS / 1000 + ' second(s).');
+    }, DEADLINE_MS);
+
+    try {
+      if (gsap) {
+        clearTimeout(timeout);
+        callback();
+      }
+    } catch {
+      devLog('Initial GSAP load failed. Trying again.');
+      interval = setInterval(() => {
+        try {
+          if (gsap) {
+            clearTimeout(timeout);
+            clearInterval(interval);
+            callback();
+          }
+        } catch {}
+      }, RETRY_MS);
+    }
+  }
+
+  function initGlobalAnimations() {
+    const DURATION = 0.5;
+    const tl = gsap.timeline();
+
+    const currentFrame = '.start-frame';
+
+    //  Define element selectors
+    const headlineSelector = `${currentFrame} .headline`;
+    const subheadlineSelector = `${currentFrame} .subheadline`;
+
+    tl.fromTo(headlineSelector, { x: '-100%' }, { x: 0, duration: DURATION }) // end time: 0.5
+      .fromTo(
+        subheadlineSelector,
+        { x: '-100%' },
+        { x: 0, duration: DURATION },
+        '+=1'
+      ) // end time: 2
+      .to(
+        [headlineSelector, subheadlineSelector],
+        { x: '100%', duration: DURATION },
+        '+=3.5'
+      ) // end time: 5.5
+      .to(currentFrame, {
+        opacity: 0,
+        visibility: 'hidden',
+        duration: DURATION,
+      }); // end time: 6
+  }
+
+  checkForGsap(initGlobalAnimations);
+})();
 
 // Middle
-KGZ1bmN0aW9uICgpIHsKICBmdW5jdGlvbiBpc0RldkVudigpIHsKICAgIHJldHVybiAoCiAgICAgIHdpbmRvdy5sb2NhdGlvbi5ocmVmLmluZGV4T2YoJ29yY2EuYWR5bGljLmNvbScpID4gMCB8fAogICAgICB3aW5kb3cubG9jYXRpb24uaHJlZi5pbmRleE9mKCd0ZW1wbGF0ZS5hZHlsaWNvcmNhLmNvbScpID4gMCB8fAogICAgICB3aW5kb3cubG9jYXRpb24uaHJlZi5pbmRleE9mKCdzYXR1cm4uYWR5bGljLmNvbScpID4gMCB8fAogICAgICB3aW5kb3cubG9jYXRpb24uaG9zdG5hbWUgPT09ICcxMjcuMC4wLjEnIHx8CiAgICAgIHdpbmRvdy5sb2NhdGlvbi5ob3N0bmFtZSA9PT0gJ2xvY2FsaG9zdCcKICAgICk7CiAgfQogIGZ1bmN0aW9uIGRldkxvZyhtZXNzYWdlKSB7CiAgICBpZiAoaXNEZXZFbnYoKSkgY29uc29sZS5sb2cobWVzc2FnZSk7CiAgfQoKICBmdW5jdGlvbiBjaGVja0ZvckdzYXAoY2FsbGJhY2spIHsKICAgIGxldCBERUFETElORV9NUyA9IDEwMDAwOwogICAgbGV0IFJFVFJZX01TID0gMTAwOwogICAgbGV0IGludGVydmFsOwoKICAgIGxldCB0aW1lb3V0ID0gc2V0VGltZW91dCgoKSA9PiB7CiAgICAgIGNsZWFySW50ZXJ2YWwoaW50ZXJ2YWwpOwogICAgICBkZXZMb2coJ0dTQVAgZmFpbGVkIHRvIGxvYWQgYWZ0ZXIgJyArIERFQURMSU5FX01TIC8gMTAwMCArICcgc2Vjb25kKHMpLicpOwogICAgfSwgREVBRExJTkVfTVMpOwoKICAgIHRyeSB7CiAgICAgIGlmIChnc2FwKSB7CiAgICAgICAgY2xlYXJUaW1lb3V0KHRpbWVvdXQpOwogICAgICAgIGNhbGxiYWNrKCk7CiAgICAgIH0KICAgIH0gY2F0Y2ggewogICAgICBkZXZMb2coJ0luaXRpYWwgR1NBUCBsb2FkIGZhaWxlZC4gVHJ5aW5nIGFnYWluLicpOwogICAgICBpbnRlcnZhbCA9IHNldEludGVydmFsKCgpID0+IHsKICAgICAgICB0cnkgewogICAgICAgICAgaWYgKGdzYXApIHsKICAgICAgICAgICAgY2xlYXJUaW1lb3V0KHRpbWVvdXQpOwogICAgICAgICAgICBjbGVhckludGVydmFsKGludGVydmFsKTsKICAgICAgICAgICAgY2FsbGJhY2soKTsKICAgICAgICAgIH0KICAgICAgICB9IGNhdGNoIHt9CiAgICAgIH0sIFJFVFJZX01TKTsKICAgIH0KICB9CgogIGZ1bmN0aW9uIGluaXRHbG9iYWxBbmltYXRpb25zKCkgewogICAgY29uc3QgRFVSQVRJT04gPSAwLjU7CiAgICBjb25zdCB0bCA9IGdzYXAudGltZWxpbmUoKTsKCiAgICBjb25zdCBjdXJyZW50RnJhbWUgPSAnLm1pZGRsZS1mcmFtZSc7CiAgICBjb25zdCBuZXh0RnJhbWUgPSAnLmVuZC1mcmFtZSc7CgogICAgLy8gIERlZmluZSBlbGVtZW50IHNlbGVjdG9ycwogICAgY29uc3QgaGVhZGxpbmVTZWxlY3RvciA9IGAke2N1cnJlbnRGcmFtZX0gLmhlYWRsaW5lYDsKICAgIGNvbnN0IHN1YmhlYWRsaW5lU2VsZWN0b3IgPSBgJHtjdXJyZW50RnJhbWV9IC5zdWJoZWFkbGluZWA7CgogICAgdGwudG8oY3VycmVudEZyYW1lLCB7IG9wYWNpdHk6IDEsIGR1cmF0aW9uOiBEVVJBVElPTiB9KSAvLyBlbmQgdGltZTogMC41CiAgICAgIC5mcm9tVG8oaGVhZGxpbmVTZWxlY3RvciwgeyB4OiAnLTEwMCUnIH0sIHsgeDogMCwgZHVyYXRpb246IERVUkFUSU9OIH0pIC8vIGVuZCB0aW1lOiAxCiAgICAgIC5mcm9tVG8oCiAgICAgICAgc3ViaGVhZGxpbmVTZWxlY3RvciwKICAgICAgICB7IHg6ICctMTAwJScgfSwKICAgICAgICB7IHg6IDAsIGR1cmF0aW9uOiBEVVJBVElPTiB9LAogICAgICAgICcrPTEnCiAgICAgICkgLy8gZW5kIHRpbWU6IDIuNQogICAgICAudG8oCiAgICAgICAgW2hlYWRsaW5lU2VsZWN0b3IsIHN1YmhlYWRsaW5lU2VsZWN0b3JdLAogICAgICAgIHsgeDogJzEwMCUnLCBkdXJhdGlvbjogRFVSQVRJT04gfSwKICAgICAgICAnKz0zJwogICAgICApIC8vIGVuZCB0aW1lOiA1LjUKICAgICAgLnRvKGN1cnJlbnRGcmFtZSwgewogICAgICAgIG9wYWNpdHk6IDAsCiAgICAgICAgdmlzaWJpbGl0eTogJ2hpZGRlbicsCiAgICAgICAgZHVyYXRpb246IERVUkFUSU9OLAogICAgICB9KSAvLyBlbmQgdGltZTogNgogIH0KICBjaGVja0ZvckdzYXAoaW5pdEdsb2JhbEFuaW1hdGlvbnMpOwp9KSgpOw==
+(function () {
+  function isDevEnv() {
+    return (
+      window.location.href.indexOf('orca.adylic.com') > 0 ||
+      window.location.href.indexOf('template.adylicorca.com') > 0 ||
+      window.location.href.indexOf('saturn.adylic.com') > 0 ||
+      window.location.hostname === '127.0.0.1' ||
+      window.location.hostname === 'localhost'
+    );
+  }
+  function devLog(message) {
+    if (isDevEnv()) console.log(message);
+  }
+
+  function checkForGsap(callback) {
+    let DEADLINE_MS = 10000;
+    let RETRY_MS = 100;
+    let interval;
+
+    let timeout = setTimeout(() => {
+      clearInterval(interval);
+      devLog('GSAP failed to load after ' + DEADLINE_MS / 1000 + ' second(s).');
+    }, DEADLINE_MS);
+
+    try {
+      if (gsap) {
+        clearTimeout(timeout);
+        callback();
+      }
+    } catch {
+      devLog('Initial GSAP load failed. Trying again.');
+      interval = setInterval(() => {
+        try {
+          if (gsap) {
+            clearTimeout(timeout);
+            clearInterval(interval);
+            callback();
+          }
+        } catch {}
+      }, RETRY_MS);
+    }
+  }
+
+  function initGlobalAnimations() {
+    const DURATION = 0.5;
+    const tl = gsap.timeline();
+
+    const currentFrame = '.middle-frame';
+
+    //  Define element selectors
+    const headlineSelector = `${currentFrame} .headline`;
+    const subheadlineSelector = `${currentFrame} .subheadline`;
+
+    tl.to(currentFrame, { opacity: 1, duration: DURATION }) // end time: 0.5
+      .fromTo(headlineSelector, { x: '-100%' }, { x: 0, duration: DURATION }) // end time: 1
+      .fromTo(
+        subheadlineSelector,
+        { x: '-100%' },
+        { x: 0, duration: DURATION },
+        '+=1'
+      ) // end time: 2.5
+      .to(
+        [headlineSelector, subheadlineSelector],
+        { x: '100%', duration: DURATION },
+        '+=3'
+      ) // end time: 5.5
+      .to(currentFrame, {
+        opacity: 0,
+        visibility: 'hidden',
+        duration: DURATION,
+      }); // end time: 6
+  }
+  checkForGsap(initGlobalAnimations);
+})();
 
 // End
-KGZ1bmN0aW9uICgpIHsKICBmdW5jdGlvbiBpc0RldkVudigpIHsKICAgIHJldHVybiAoCiAgICAgIHdpbmRvdy5sb2NhdGlvbi5ocmVmLmluZGV4T2YoJ29yY2EuYWR5bGljLmNvbScpID4gMCB8fAogICAgICB3aW5kb3cubG9jYXRpb24uaHJlZi5pbmRleE9mKCd0ZW1wbGF0ZS5hZHlsaWNvcmNhLmNvbScpID4gMCB8fAogICAgICB3aW5kb3cubG9jYXRpb24uaHJlZi5pbmRleE9mKCdzYXR1cm4uYWR5bGljLmNvbScpID4gMCB8fAogICAgICB3aW5kb3cubG9jYXRpb24uaG9zdG5hbWUgPT09ICcxMjcuMC4wLjEnIHx8CiAgICAgIHdpbmRvdy5sb2NhdGlvbi5ob3N0bmFtZSA9PT0gJ2xvY2FsaG9zdCcKICAgICk7CiAgfQoKICBmdW5jdGlvbiBkZXZMb2cobWVzc2FnZSkgewogICAgaWYgKGlzRGV2RW52KCkpIGNvbnNvbGUubG9nKG1lc3NhZ2UpOwogIH0KCiAgZnVuY3Rpb24gY2hlY2tGb3JHc2FwKGNhbGxiYWNrKSB7CiAgICBsZXQgREVBRExJTkVfTVMgPSAxMDAwMDsKICAgIGxldCBSRVRSWV9NUyA9IDEwMDsKICAgIGxldCBpbnRlcnZhbDsKCiAgICBsZXQgdGltZW91dCA9IHNldFRpbWVvdXQoKCkgPT4gewogICAgICBjbGVhckludGVydmFsKGludGVydmFsKTsKICAgICAgZGV2TG9nKCdHU0FQIGZhaWxlZCB0byBsb2FkIGFmdGVyICcgKyBERUFETElORV9NUyAvIDEwMDAgKyAnIHNlY29uZChzKS4nKTsKICAgIH0sIERFQURMSU5FX01TKTsKCiAgICB0cnkgewogICAgICBpZiAoZ3NhcCkgewogICAgICAgIGNsZWFyVGltZW91dCh0aW1lb3V0KTsKICAgICAgICBjYWxsYmFjaygpOwogICAgICB9CiAgICB9IGNhdGNoIHsKICAgICAgZGV2TG9nKCdJbml0aWFsIEdTQVAgbG9hZCBmYWlsZWQuIFRyeWluZyBhZ2Fpbi4nKTsKICAgICAgaW50ZXJ2YWwgPSBzZXRJbnRlcnZhbCgoKSA9PiB7CiAgICAgICAgdHJ5IHsKICAgICAgICAgIGlmIChnc2FwKSB7CiAgICAgICAgICAgIGNsZWFyVGltZW91dCh0aW1lb3V0KTsKICAgICAgICAgICAgY2xlYXJJbnRlcnZhbChpbnRlcnZhbCk7CiAgICAgICAgICAgIGNhbGxiYWNrKCk7CiAgICAgICAgICB9CiAgICAgICAgfSBjYXRjaCB7fQogICAgICB9LCBSRVRSWV9NUyk7CiAgICB9CiAgfQoKICBmdW5jdGlvbiBpbml0R2xvYmFsQW5pbWF0aW9ucygpIHsKICAgIGNvbnN0IERVUkFUSU9OID0gMC41OwogICAgY29uc3QgdGwgPSBnc2FwLnRpbWVsaW5lKCk7CgogICAgY29uc3QgY3VycmVudEZyYW1lID0gJy5lbmQtZnJhbWUnOwoKICAgIC8vICBEZWZpbmUgZWxlbWVudCBzZWxlY3RvcnMKICAgIGNvbnN0IGhlYWRsaW5lU2VsZWN0b3IgPSBgJHtjdXJyZW50RnJhbWV9IC5oZWFkbGluZWA7CiAgICBjb25zdCBzdWJoZWFkbGluZVNlbGVjdG9yID0gYCR7Y3VycmVudEZyYW1lfSAuc3ViaGVhZGxpbmVgOwoKICAgIHRsLnRvKGN1cnJlbnRGcmFtZSwgeyBvcGFjaXR5OiAxLCBkdXJhdGlvbjogRFVSQVRJT04gfSkgLy8gZW5kIHRpbWU6IDAuNQogICAgICAuZnJvbVRvKGhlYWRsaW5lU2VsZWN0b3IsIHsgeDogJy0xMDAlJyB9LCB7IHg6IDAsIGR1cmF0aW9uOiBEVVJBVElPTiB9KSAvLyBlbmQgdGltZTogMQogICAgICAuZnJvbVRvKAogICAgICAgIHN1YmhlYWRsaW5lU2VsZWN0b3IsCiAgICAgICAgeyB4OiAnLTEwMCUnIH0sCiAgICAgICAgeyB4OiAwLCBkdXJhdGlvbjogRFVSQVRJT04gfSwKICAgICAgICAnKz0xJwogICAgICApOyAvLyBlbmQgdGltZTogMi41CiAgfQogIGNoZWNrRm9yR3NhcChpbml0R2xvYmFsQW5pbWF0aW9ucyk7Cn0pKCk7
+(function () {
+  function isDevEnv() {
+    return (
+      window.location.href.indexOf('orca.adylic.com') > 0 ||
+      window.location.href.indexOf('template.adylicorca.com') > 0 ||
+      window.location.href.indexOf('saturn.adylic.com') > 0 ||
+      window.location.hostname === '127.0.0.1' ||
+      window.location.hostname === 'localhost'
+    );
+  }
+
+  function devLog(message) {
+    if (isDevEnv()) console.log(message);
+  }
+
+  function checkForGsap(callback) {
+    let DEADLINE_MS = 10000;
+    let RETRY_MS = 100;
+    let interval;
+
+    let timeout = setTimeout(() => {
+      clearInterval(interval);
+      devLog('GSAP failed to load after ' + DEADLINE_MS / 1000 + ' second(s).');
+    }, DEADLINE_MS);
+
+    try {
+      if (gsap) {
+        clearTimeout(timeout);
+        callback();
+      }
+    } catch {
+      devLog('Initial GSAP load failed. Trying again.');
+      interval = setInterval(() => {
+        try {
+          if (gsap) {
+            clearTimeout(timeout);
+            clearInterval(interval);
+            callback();
+          }
+        } catch {}
+      }, RETRY_MS);
+    }
+  }
+
+  function initGlobalAnimations() {
+    const DURATION = 0.5;
+
+    const currentFrame = '.end-frame';
+
+    //  Define element selectors
+    const ctaSelector = `${currentFrame} .cta-container`;
+    const headlineSelector = `${currentFrame} .headline`;
+    const subheadlineSelector = `${currentFrame} .subheadline`;
+
+    const tl = gsap.timeline();
+
+    gsap.registerEffect({
+      name: 'pulse',
+      effect: (targets, config) => {
+        return gsap.to(targets, {
+          duration: config.duration,
+          scale: config.scale,
+        });
+      },
+      defaults: { duration: 0.125, scale: 1 }, //defaults get applied to any "config" object passed to the effect
+      extendTimeline: true, //now you can call the effect directly on any GSAP timeline to have the result immediately inserted in the position you define (default is sequenced at the end)
+    });
+
+    tl.to(currentFrame, { opacity: 1, duration: DURATION }) // end time: 0.5
+      .fromTo(headlineSelector, { x: '-100%' }, { x: 0, duration: DURATION }) // end time: 1
+      .fromTo(
+        subheadlineSelector,
+        { x: '-100%' },
+        { x: 0, duration: DURATION },
+        '+=1'
+      )
+      // end time: 2.5
+      .fromTo(ctaSelector, { opacity: 0 }, { opacity: 1, duration: 0.5 })
+      .pulse(ctaSelector, { scale: 1.1 })
+      .pulse(ctaSelector, { scale: 1 })
+      .pulse(ctaSelector, { scale: 1.05 })
+      .pulse(ctaSelector, { scale: 1 });
+  }
+  checkForGsap(initGlobalAnimations);
+})();

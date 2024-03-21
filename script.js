@@ -1,1 +1,128 @@
-KGZ1bmN0aW9uICgpIHsKICBsZXQgZGFjID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcignLmR5bmFtaWNBZHZlcnRDb250YWluZXInKTsKCiAgaWYgKGlzRGV2RW52KCkpIHsKICAgIGNvbnNvbGUubG9nKCdPbiBPcmNhJyk7CiAgICBhZGRDbGlja291dChkZXZDbGlja291dCk7CiAgICBhZGRHc2FwKCk7CiAgfSBlbHNlIHsKICAgIGFkZENsaWNrb3V0KGV4aXRDbGlja0hhbmRsZXIpOwogICAgLy8gZ3NhcCBzaG91bGQgYmUgYWRkZWQgaW4gc2hlbGwgaW4gbGl2ZSBlbnZpcm9ubWVudAogIH0KICBjaGVja0ZvckdzYXAoaW5pdEdsb2JhbEFuaW1hdGlvbnMpOwoKICBmdW5jdGlvbiBpc0RldkVudigpIHsKICAgIHJldHVybiAoCiAgICAgIHdpbmRvdy5sb2NhdGlvbi5ocmVmLmluZGV4T2YoJ29yY2EuYWR5bGljLmNvbScpID4gMCB8fAogICAgICB3aW5kb3cubG9jYXRpb24uaHJlZi5pbmRleE9mKCd0ZW1wbGF0ZS5hZHlsaWNvcmNhLmNvbScpID4gMCB8fAogICAgICB3aW5kb3cubG9jYXRpb24uaHJlZi5pbmRleE9mKCdzYXR1cm4uYWR5bGljLmNvbScpID4gMCB8fAogICAgICB3aW5kb3cubG9jYXRpb24uaG9zdG5hbWUgPT09ICcxMjcuMC4wLjEnIHx8CiAgICAgIHdpbmRvdy5sb2NhdGlvbi5ob3N0bmFtZSA9PT0gJ2xvY2FsaG9zdCcKICAgICk7CiAgfQoKICBmdW5jdGlvbiBhZGRDbGlja291dChjYWxsYmFjaykgewogICAgZGFjLmFkZEV2ZW50TGlzdGVuZXIoJ2NsaWNrJywgY2FsbGJhY2spOwogIH0KCiAgZnVuY3Rpb24gZGV2Q2xpY2tvdXQoKSB7CiAgICBjb25zb2xlLmxvZygnQ2xpY2tvdXQgd29ya3MnKTsKICB9CgogIGZ1bmN0aW9uIGFkZEdzYXAoKSB7CiAgICBsZXQgczEgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCdzY3JpcHQnKTsKICAgIC8vIFVwZGF0ZSBzcmMgdG8gbGF0ZXN0IHZlcnNpb24gb2YgdmVuZG9yIHNwZWNpZmljIEdTQVAgQ0ROOiBpLmUuIERvdWJsZWNsaWNrLCBTaXptZWsKICAgIHMxLnNldEF0dHJpYnV0ZSgKICAgICAgJ3NyYycsCiAgICAgICdodHRwczovL2NkbmpzLmNsb3VkZmxhcmUuY29tL2FqYXgvbGlicy9nc2FwLzMuNC4yL2dzYXAubWluLmpzJwogICAgKTsKICAgIGRlZmluZSA9IG51bGw7CiAgICBkYWMuYXBwZW5kQ2hpbGQoczEpOwogIH0KfSkoKTsK
+(function () {
+  let dac = document.querySelector('.dynamicAdvertContainer');
+
+  if (isDevEnv()) {
+    console.log('On Orca');
+    addClickout(devClickout);
+    addGsap();
+  } else {
+    addClickout(exitClickHandler);
+    // gsap should be added in shell in live environment
+  }
+
+  function isDevEnv() {
+    return (
+      window.location.href.indexOf('orca.adylic.com') > 0 ||
+      window.location.href.indexOf('template.adylicorca.com') > 0 ||
+      window.location.href.indexOf('saturn.adylic.com') > 0 ||
+      window.location.hostname === '127.0.0.1' ||
+      window.location.hostname === 'localhost'
+    );
+  }
+
+  function addClickout(callback) {
+    dac.addEventListener('click', callback);
+  }
+
+  function devClickout() {
+    console.log('Clickout works');
+  }
+
+  function addGsap() {
+    let s1 = document.createElement('script');
+    // Update src to latest version of vendor specific GSAP CDN: i.e. Doubleclick, Sizmek
+    s1.setAttribute(
+      'src',
+      'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js'
+    );
+    define = null;
+    dac.appendChild(s1);
+  }
+})();
+
+(function () {
+  function isDevEnv() {
+    return (
+      window.location.href.indexOf('orca.adylic.com') > 0 ||
+      window.location.href.indexOf('template.adylicorca.com') > 0 ||
+      window.location.href.indexOf('saturn.adylic.com') > 0 ||
+      window.location.hostname === '127.0.0.1' ||
+      window.location.hostname === 'localhost'
+    );
+  }
+
+  function devLog(message) {
+    if (isDevEnv()) console.log(message);
+  }
+
+  function checkForGsap(callback) {
+    let DEADLINE_MS = 10000;
+    let RETRY_MS = 100;
+    let interval;
+
+    let timeout = setTimeout(() => {
+      clearInterval(interval);
+      devLog('GSAP failed to load after ' + DEADLINE_MS / 1000 + ' second(s).');
+    }, DEADLINE_MS);
+
+    try {
+      if (gsap) {
+        clearTimeout(timeout);
+        callback();
+      }
+    } catch {
+      devLog('Initial GSAP load failed. Trying again.');
+      interval = setInterval(() => {
+        try {
+          if (gsap) {
+            clearTimeout(timeout);
+            clearInterval(interval);
+            callback();
+          }
+        } catch {}
+      }, RETRY_MS);
+    }
+  }
+
+  function initGlobalAnimations() {
+    const DURATION = 0.5;
+    const tl = gsap.timeline();
+
+    gsap.registerEffect({
+      name: 'pulse',
+      effect: (targets, config) => {
+        return gsap.to(targets, {
+          duration: config.duration,
+          scale: config.scale,
+        });
+      },
+      defaults: { duration: 0.125, scale: 1 }, //defaults get applied to any "config" object passed to the effect
+      extendTimeline: true, //now you can call the effect directly on any GSAP timeline to have the result immediately inserted in the position you define (default is sequenced at the end)
+    });
+
+    const currentFrame = '.end-frame';
+
+    //  Define element selectors
+    const ctaSelector = `${currentFrame} .cta`;
+    const headlineSelector = `${currentFrame} .headline`;
+    const subheadlineSelector = `${currentFrame} .subheadline`;
+
+    tl.to(currentFrame, { opacity: 1, duration: DURATION }) // end time: 0.5
+      .fromTo(headlineSelector, { x: '-100%' }, { x: 0, duration: DURATION }) // end time: 1
+      .fromTo(
+        subheadlineSelector,
+        { x: '-100%' },
+        { x: 0, duration: DURATION },
+        '+=1'
+      )
+      .fromTo(ctaSelector, { opacity: 0 }, { opacity: 1, duration: 0.5 })
+      .pulse(ctaSelector, { scale: 1.1 })
+      .pulse(ctaSelector, { scale: 1 })
+      .pulse(ctaSelector, { scale: 1.05 })
+      .pulse(ctaSelector, { scale: 1 });
+
+    // end time: 2.5
+  }
+
+  checkForGsap(initGlobalAnimations);
+})();
